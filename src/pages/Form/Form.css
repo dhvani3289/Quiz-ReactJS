@@ -1,0 +1,66 @@
+.signup-wrap {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    text-align: left;
+    margin: 10px;
+    padding-left: 7px;
+}
+
+.box {
+    width: 400px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 4px;
+}
+
+.box input {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 10px;
+    border-color: rgb(196 196 196 / 47%);
+    border-radius: 6px;
+    padding: 8px;
+    width: 90%;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+}
+
+.option input[type="checkbox"]{
+    display: flex;
+    width: 10%;
+    box-shadow: none;
+    height: 28px;
+}
+
+.register-btn {
+    background-color: #4070f4;
+    color: white;
+    margin: 10px 0px 15px;
+    width: 80%;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 4px;
+}
+
+p a {
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+.error p {
+    margin: 0px;
+    color: red;
+    text-align: left;
+    margin-left: 24px;
+}

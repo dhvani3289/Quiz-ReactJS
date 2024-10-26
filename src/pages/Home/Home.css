@@ -1,0 +1,25 @@
+.openingPage {
+    background-color: lavenderblush;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.openingPage .btn {
+    width: 200px;
+    height: 100px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.openingPage a {
+    font-size: 30px;
+    color: black;
+    /* gainsboro honeydew ivory khaki lavenderblush */
+}
