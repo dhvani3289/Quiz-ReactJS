@@ -33,9 +33,8 @@ function Form() {
             <div className='signup-wrap'>
                 <form method="post" onSubmit={(e) => submitData(e)}>
                     <div className="box">
-                        <h2 className='register'>QUIZ QUESTIONS </h2>
+                        <h2 className='register'>ADD QUESTION</h2>
                         <input type="text" placeholder='QUESTION' name='question' value={quizQuestionData.question ? quizQuestionData.question : ""} onChange={(e) => handleChange(e)} />
-                        {/* <div className='error'> {validationErrors.username && <p>{validationErrors.username}</p>}</div> */}
                         <input type="text" placeholder='OPTION 1' name='optionOne' value={quizQuestionData.optionOne ? quizQuestionData.optionOne : ""} onChange={(e) => handleChange(e)} />
                         <input type="text" placeholder='OPTION 2' name='optionTwo' value={quizQuestionData.optionTwo ? quizQuestionData.optionTwo : ""} onChange={(e) => handleChange(e)} />
                         <input type="text" placeholder='OPTION 3' name='optionThree' value={quizQuestionData.optionThree ? quizQuestionData.optionThree : ""} onChange={(e) => handleChange(e)} />
@@ -57,70 +56,5 @@ export default Form;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let [validationErrors, setValidationErrors] = useState({});
-
-// let validation = () => {
-//     let validationMessages = {};
-//     if (!registerData.username) {
-//         validationMessages.username = 'Username is required';
-//     }
-//     if (!registerData.email) {
-//         validationMessages.email = 'Email is required';
-//     }
-//     else if (!registerData.email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
-//         validationMessages.email = 'You have entered an invalid email address!'
-//     }
-//     if (!registerData.password) {
-//         validationMessages.password = 'Password is required';
-//     }
-//     else if (!registerData.password.match(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/)) {
-//         validationMessages.password = 'Enter a password between 7 to 15 characters which contain at least one numeric digit and a special character.'
-//     }
-//     if (!registerData.termsAndConditions) {
-//         validationMessages.termsAndConditions = 'Please agree to the Terms and Conditions before submitting.';
-//     }
-//     return validationMessages
-// }
-
-
-
-
-
-
-// let formErrors = validation();
-// if (Object.keys(formErrors).length > 0) {
-//     setValidationErrors(formErrors)
-// }
-// else {
-//     let check = await axios.get("http://localhost:3000/users?email=" + registerData.email);
-//     console.log(check.data, "check");
-//     if (check.data.length == 0) {
-//         if (registerData.password === registerData.confirmPassword) {
-//             await axios.post("http://localhost:3000/users", registerData);
-//         }
-//     }
-//     else {
-//         toast.error("Email already exists");
-//     }
-// }
 
 
